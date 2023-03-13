@@ -1,0 +1,49 @@
+{
+	"name": "SqlServerTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "WAFER",
+				"type": "varchar"
+			},
+			{
+				"name": "DATE_TIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOT",
+				"type": "varchar"
+			},
+			{
+				"name": "TESTER",
+				"type": "varchar"
+			},
+			{
+				"name": "OPERATOR",
+				"type": "varchar"
+			},
+			{
+				"name": "RECEIPE",
+				"type": "varchar"
+			},
+			{
+				"name": "PARAMETER_1",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "SPC01"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
